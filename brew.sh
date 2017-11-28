@@ -49,5 +49,10 @@ brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
 
+# Install node
+brew install node
+brew install yarn
+brew install watchman
+
 # Remove outdated versions from the cellar.
 brew cleanup

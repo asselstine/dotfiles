@@ -1,3 +1,5 @@
+[include]
+	path = ~/.gitconfig.user
 [alias]
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
@@ -5,6 +7,8 @@
 
 	# View the current working tree status using the short format
 	s = status -s
+
+	b = branch
 
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
@@ -15,14 +19,16 @@
 	# Pull in remote changes for the current repository and all its submodules
 	p = !"git pull; git submodule foreach git pull origin master"
 
-	# Clone a repository including all submodules
-	c = clone --recursive
+	# commit
+	c = commit
 
 	# Commit all changes
 	ca = !git add -A && git commit -av
 
+	co = checkout 
+
 	# Switch to a branch, creating it if necessary
-	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+	cob = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
 
 	# Show verbose output about tags, branches or remotes
 	tags = tag -l
