@@ -54,5 +54,8 @@ brew install node
 brew install yarn
 brew install watchman
 
+brew install rbenv
+brew install direnv
+
 # Remove outdated versions from the cellar.
 brew cleanup
