@@ -1,1 +1,2 @@
 export PATH=$PATH:./node_modules/.bin
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"

@@ -13,7 +13,12 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
 alias g="git"
-alias prune_local_branches="git branch --merged master | grep -v '\*\|master' | xargs -n 1 git branch -d"
+
+prune_branches_like() {
+	git branch --merged $1 | grep -v "\*\|$1" | xargs -n 1 git branch -d
+}
+
+alias prune_like_master="prune_branches_like master"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
