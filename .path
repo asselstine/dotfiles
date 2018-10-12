@@ -1,2 +1,3 @@
-export PATH=$PATH:./node_modules/.bin
+export PATH=./node_modules/.bin:$PATH
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH=$(python -m site --user-base)/bin:$PATH
