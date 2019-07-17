@@ -56,7 +56,10 @@ brew install watchman
 
 brew install rbenv
 brew install direnv
+
+# Install nvm
 brew install nvm
+mkdir ~/.nvm
 
 # Remove outdated versions from the cellar.
 brew cleanup
