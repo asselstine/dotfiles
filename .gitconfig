@@ -196,3 +196,5 @@
 [user]
 	name = Brendan Asselstine
 	email = mail.asselstine@gmail.com
+[init]
+	defaultBranch = main
